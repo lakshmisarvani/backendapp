@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(cors())
 
 const studentrouter = require("./routes/studentroutes");
- const facultyrouter = require("./routes/Facultyroutes");
+ const facultyrouter = require("./routes/facultyroutes");
 //const courserouter = require("./routes/courseroute");
 const adminrouter = require("./routes/adminroutes");
 
