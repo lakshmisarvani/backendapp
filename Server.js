@@ -9,16 +9,13 @@ const cors = require("cors")//allows one app with another app to resource sharin
 //     console.log(err.message)
 // });
 
-/*Atlas COnnection */
 
-
- const dburl = "mongodb+srv://admin:admin@cluster0.vuqxjga.mongodb.net/studentcourseregistration?retryWrites=true&w=majority&appName=Cluster0"
- mongoose.connect(dburl).then(() => {
-     console.log("Connected to MongoDB Atlas successfully")
- }).catch((err) => {
-     console.log(err.message)
- });
-
+const dburl = "mongodb+srv://admin:admin@cluster0.vuqxjga.mongodb.net/studentcourseregistration?retryWrites=true&w=majority&appName=Cluster0"
+mongoose.connect(dburl).then(() => {
+    console.log("Connected to MongoDB Atlas successfully")
+}).catch((err) => {
+    console.log(err.message)
+});
 const app = express()
 app.use(express.json())
 app.use(cors())
